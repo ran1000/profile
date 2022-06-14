@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;500;700&display=swap');
+
+body {
+  background-color: #F8F8F8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 300;
+  line-height: 1em;
+}
+
+h1 {
+  color: #2D46B9;
+  font-family: 'Lobster', sans-serif;
+}
+
+h3 {
+  color: #2D46B9;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 700;
+  line-height: 1em;
+}
+
+p {
+  color: #1E3163;
+  letter-spacing: 0.5px;
+}
+
+.action {
+  color: #F037A5
+}
+
+img {
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid #1E3163;
+}
+
+ul {
+  list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 15px;
+  background-color: #F8F8F8;
+  border-radius: 50px;
+  border: 5px solid #2D46B9;
+  margin-top: 10px;
+}
+
+button a {
+  font-weight: 700;
+  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  color: #2D46B9;
+}
+
+li {
+  padding: 0px;
+  text-decoration: none
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto
+}
+
+.list-inline>li {
+  display: inline-block;
+  padding-right: 20px;
+  text-align: center;
+  margin: 0px
+}
+
+li i {
+  text-align: center;
+  color: #F037A5;
+}
+
+.card {
+  text-align: center;
+  background-color: #F8F8F8;
+  border: 0.5px solid #c3c3c3;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px
+}
