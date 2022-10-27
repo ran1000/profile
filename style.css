@@ -1,51 +1,182 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --colorBack: #1b1f24;
+  --colorText: #ffffff;
+  --colorBtnText: #0d1117;
+  --colorBtnBack: #f6f8fa;
+  --colorHighlight: #F037A5;
+  --headerFont: "Helvetica";
+  --bodyFont: 'Open Sans', sans-serif;
+}
 
 body {
-  background-color: #F8F8F8;
+  background-color: var(--colorBack);
+  font-family: var(--bodyFont);
+  color: var(--colorText);
+  position: relative;
+}
+
+.image-container {
+  position: absolute;
+  z-index: -3;
+  top: 70px;
+  right: 50px;
+  rotate: -3deg;
+  height: 500px;
+  width: 400px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.profile-page {
+  /* display: flex; */
+  width: 66vw;
+  margin: 0px auto;
+}
+
+/* @media (max-width: 400px),
+(orientation: portrait) {
+  .portfolio-body {
+    flex-direction: column;
+  }
+} */
+
+.text-container {}
+
+.text-container>.title {
+  color: var(--colorText);
+  font-family: var(--headerFont);
+  font-size: 3rem;
+  padding-top: 60px;
+}
+
+.text-container>.subtitle {
+  color: var(--bodyFont);
   font-family: 'Open Sans', sans-serif;
-  font-size: 300;
-  line-height: 1em;
+  padding-top: 50px;
+  font-size: 1.8rem;
 }
 
-h1 {
-  color: #2D46B9;
-  font-family: 'Lobster', sans-serif;
+.text-container>.description {
+  padding-top: 40px;
+  color: var(--bodyFont);
+  font-size: 1.3rem;
+  line-height: 1.8rem;
 }
 
-h3 {
-  color: #2D46B9;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 700;
-  line-height: 1em;
+.dropline {
+  padding-top: 50px;
+  color: var(--bodyFont);
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  padding-bottom: 60px;
 }
 
-p {
-  color: #1E3163;
-  letter-spacing: 0.5px;
+.dropline .highlight {
+  color: var(--colorHighlight);
+  font-weight: 700;
 }
 
-.action {
-  color: #F037A5
+.roll-action {
+  font-size: 30px;
+  margin-bottom: 80px;
 }
 
-img {
-  height: 200px;
-  border-radius: 50%;
-  border: 6px solid #1E3163;
+.abilities {
+  padding-bottom: 120px;
+}
+
+.abilities>p {
+  padding-bottom: 80px;
+  color: var(--bodyFont);
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+.contact-info {
+  position: absolute;
+  left: 15%;
+  bottom: 100px;
+  width: 70%;
+  max-width: 1000px;
+  height: 300px;
+  margin: 0px auto;
+  background-color: var(--colorBtnBack);
+  border: 1px solid var(--colorText);
+  border-radius: 20px;
+  box-shadow: #1b1f24;
+}
+
+.contact-info>h3 {
+  color: var(--colorBtnText);
+  padding-top: 70px;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+}
+
+.list-inline>li {
+  text-align: center;
+  padding-bottom: 15px;
 }
 
 ul {
+  padding-top: 30px;
   list-style: none;
 }
 
-
 a {
   text-decoration: none;
+  color: var(--colorHighlight);
+  font-family: var(--headerFont);
+  font-size: 20px;
 }
 
-button {
+li i {
+  font-size: 35px;
+  text-align: center;
+  color: var(--colorHighlight);
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.abilities:nth-child(2) {
+  transition-delay: 300ms;
+}
+
+.abilities:nth-child(3) {
+  transition-delay: 600ms;
+}
+
+.abilities:nth-child(4) {
+  transition-delay: 900ms;
+}
+
+img {
+  height: 100%;
+}
+
+
+/* button {
   padding: 15px;
-  background-color: #F8F8F8;
+  background-color: #000000f2;
   border-radius: 50px;
   border: 5px solid #2D46B9;
   margin-top: 10px;
@@ -56,36 +187,25 @@ button a {
   font-size: 1.5em;
   font-family: 'Open Sans', sans-serif;
   color: #2D46B9;
+} */
+
+
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
 }
 
-li {
-  padding: 0px;
-  text-decoration: none
+footer {
+  position: relative;
+  background-color: var(--colorText);
+  height: 300px;
 }
 
-.container {
-  width: 500px;
-  margin: 0 auto
-}
-
-.list-inline>li {
-  display: inline-block;
-  padding-right: 20px;
-  text-align: center;
-  margin: 0px
-}
-
-li i {
-  text-align: center;
-  color: #F037A5;
-}
-
-.card {
-  text-align: center;
-  background-color: #F8F8F8;
-  border: 0.5px solid #c3c3c3;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 30px
+footer>p {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  color: var(--colorBack);
 }
