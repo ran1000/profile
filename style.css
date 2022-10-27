@@ -22,6 +22,18 @@ body {
   position: relative;
 }
 
+.image-container {
+  position: absolute;
+  z-index: -3;
+  top: 70px;
+  right: 50px;
+  rotate: -3deg;
+  height: 500px;
+  width: 400px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
 .profile-page {
   /* display: flex; */
   width: 66vw;
@@ -74,12 +86,6 @@ body {
 .roll-action {
   font-size: 30px;
   margin-bottom: 80px;
-}
-
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
 }
 
 .abilities {
@@ -140,14 +146,31 @@ li i {
 
 .hidden {
   opacity: 0;
+  transition: all 1s;
   filter: blur(5px);
   transform: translateX(-100%);
-  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.abilities:nth-child(2) {
+  transition-delay: 300ms;
+}
+
+.abilities:nth-child(3) {
+  transition-delay: 600ms;
+}
+
+.abilities:nth-child(4) {
+  transition-delay: 900ms;
 }
 
 img {
   height: 100%;
-
 }
 
 
