@@ -10,6 +10,7 @@
   --colorText: #ffffff;
   --colorBtnText: #0d1117;
   --colorBtnBack: #f6f8fa;
+  --colorIconBack: #3b3b44;
   --colorHighlight: #F037A5;
   --headerFont: "Helvetica";
   --bodyFont: 'Open Sans', sans-serif;
@@ -88,6 +89,83 @@ body {
   margin-bottom: 80px;
 }
 
+/* Tech Stack Section */
+
+.tech-stack {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+.tech-stack>img {
+  background-color: var(--colorIconBack);
+  height: 60px;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.prog-language:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.prog-language:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.prog-language:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+.prog-language:nth-child(5) {
+  transition-delay: 800ms;
+}
+
+.prog-language:nth-child(6) {
+  transition-delay: 1000ms;
+}
+
+.prog-language:nth-child(7) {
+  transition-delay: 1200ms;
+}
+
+.prog-language:nth-child(8) {
+  transition-delay: 1400ms;
+}
+
+.prog-language:nth-child(9) {
+  transition-delay: 1600ms;
+}
+
+.prog-language:nth-child(10) {
+  transition-delay: 1800ms;
+}
+
+.prog-language:nth-child(11) {
+  transition-delay: 2000ms;
+}
+
+.prog-language:nth-child(12) {
+  transition-delay: 2200ms;
+}
+
+.prog-language:nth-child(13) {
+  transition-delay: 2400ms;
+}
+
+.prog-language:nth-child(14) {
+  transition-delay: 2600ms;
+}
+
+.prog-language:nth-child(15) {
+  transition-delay: 2800ms;
+}
+
+
+/* Abilities Section */
+
 .abilities {
   padding-bottom: 120px;
 }
@@ -97,6 +175,19 @@ body {
   color: var(--bodyFont);
   font-size: 1.3rem;
   line-height: 1.8rem;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 .contact-info {
@@ -142,31 +233,6 @@ li i {
   font-size: 35px;
   text-align: center;
   color: var(--colorHighlight);
-}
-
-.hidden {
-  opacity: 0;
-  transition: all 1s;
-  filter: blur(5px);
-  transform: translateX(-100%);
-}
-
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
-
-.abilities:nth-child(2) {
-  transition-delay: 300ms;
-}
-
-.abilities:nth-child(3) {
-  transition-delay: 600ms;
-}
-
-.abilities:nth-child(4) {
-  transition-delay: 900ms;
 }
 
 img {
