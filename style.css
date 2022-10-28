@@ -212,7 +212,9 @@ body {
   text-align: center;
 }
 
-.list-inline>li {
+.contact-list {}
+
+.contact-list>li {
   text-align: center;
   padding-bottom: 15px;
 }
