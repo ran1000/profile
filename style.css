@@ -199,6 +199,9 @@ body {
 .contact-info {
   position: absolute;
   left: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   bottom: 100px;
   width: 70%;
   max-width: 1000px;
@@ -212,28 +215,25 @@ body {
 
 .contact-info>h3 {
   color: var(--colorBtnText);
-  padding-top: 70px;
   font-size: 1.8rem;
   line-height: 1.8rem;
   text-align: center;
+  padding-top: 20px;
 }
 
 .contact-list {
-  max-width: 150px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  list-style: none;
   flex-wrap: wrap;
+  margin: 0px auto;
+  padding: 0px 50px;
+  padding-bottom: 30px;
 }
 
 .contact-list>li {
-  text-align: center;
   padding-bottom: 15px;
-}
-
-ul {
-  padding-top: 30px;
-  list-style: none;
+  padding-right: 30px;
 }
 
 a {
