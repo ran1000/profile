@@ -204,13 +204,11 @@ body {
   justify-content: space-around;
   bottom: 100px;
   width: 70%;
-  max-width: 1000px;
   height: 300px;
   margin: 0px auto;
   background-color: var(--colorBtnBack);
-  border: 1px solid var(--colorText);
   border-radius: 20px;
-  box-shadow: #1b1f24;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .contact-info>h3 {
@@ -218,7 +216,7 @@ body {
   font-size: 1.8rem;
   line-height: 1.8rem;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 60px;
 }
 
 .contact-list {
