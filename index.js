@@ -27,7 +27,8 @@ hiddenElements2.forEach((el) => observer.observe(el));
 
 const slider = document.getElementById("slidedown");
 
-slider.addEventListener("click", (e) => {
-  e.preventDefault();
-  scroll({ top: 600, behavior: "smooth" });
-});
+// Implemented as a link
+// slider.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   scroll({ top: 600, behavior: "smooth" });
+// });

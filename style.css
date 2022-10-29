@@ -87,6 +87,7 @@ body {
 #slidedown {
   font-size: 30px;
   margin-bottom: 80px;
+  color: var(--colorText);
 }
 
 #slidedown:hover {
@@ -369,4 +370,8 @@ button a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+html {
+  scroll-behavior: smooth;
 }
