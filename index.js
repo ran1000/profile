@@ -1,4 +1,3 @@
-console.log("hello");
 // let typed = new Typed(".type", options);
 // let options = {
 //   stringsElement: ["elements", "that you never"],
@@ -25,3 +24,10 @@ const hiddenElements = document.querySelectorAll(".hidden");
 const hiddenElements2 = document.querySelectorAll(".hidden-2");
 hiddenElements.forEach((el) => observer.observe(el));
 hiddenElements2.forEach((el) => observer.observe(el));
+
+const slider = document.getElementById("slidedown");
+slider.addEventListener("click", (e) => {
+  console.log("hello");
+  e.preventDefault();
+  scroll({ top: 600, behavior: "smooth" });
+});

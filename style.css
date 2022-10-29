@@ -108,59 +108,59 @@ body {
 }
 
 .prog-language:nth-child(2) {
-  transition-delay: 200ms;
+  transition-delay: 100ms;
 }
 
 .prog-language:nth-child(3) {
-  transition-delay: 400ms;
+  transition-delay: 200ms;
 }
 
 .prog-language:nth-child(4) {
-  transition-delay: 600ms;
+  transition-delay: 300ms;
 }
 
 .prog-language:nth-child(5) {
-  transition-delay: 800ms;
+  transition-delay: 400ms;
 }
 
 .prog-language:nth-child(6) {
-  transition-delay: 1000ms;
+  transition-delay: 500ms;
 }
 
 .prog-language:nth-child(7) {
-  transition-delay: 1200ms;
+  transition-delay: 600ms;
 }
 
 .prog-language:nth-child(8) {
-  transition-delay: 1400ms;
+  transition-delay: 700ms;
 }
 
 .prog-language:nth-child(9) {
-  transition-delay: 1600ms;
+  transition-delay: 800ms;
 }
 
 .prog-language:nth-child(10) {
-  transition-delay: 1800ms;
+  transition-delay: 900ms;
 }
 
 .prog-language:nth-child(11) {
-  transition-delay: 2000ms;
+  transition-delay: 1000ms;
 }
 
 .prog-language:nth-child(12) {
-  transition-delay: 2200ms;
+  transition-delay: 1100ms;
 }
 
 .prog-language:nth-child(13) {
-  transition-delay: 2400ms;
+  transition-delay: 1200ms;
 }
 
 .prog-language:nth-child(14) {
-  transition-delay: 2600ms;
+  transition-delay: 1300ms;
 }
 
 .prog-language:nth-child(15) {
-  transition-delay: 2800ms;
+  transition-delay: 1400ms;
 }
 
 
