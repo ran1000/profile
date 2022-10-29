@@ -107,17 +107,50 @@
         and develop <strong class="random1">fresh</strong> features <br>
         using a TDD approach
       </p>
-      <p class="text hidden-2">
-        I work with APIs <br>
-        integrating them to build <br>
-        <strong class="random2">new</strong> services ✨
-      </p>
+      <div class="ability-example hidden-2">
+        <p class="text">
+          I work with APIs <br>
+          integrating them to build <br>
+          <strong class="random2">new</strong> services ✨
+        </p>
+        <div class="weather-widget">
+          <div data-controller="weather-search" class="container">
+            <div class="row justify-content-center">
+              <div class="col-sm-8">
+                <form class="d-flex my-5" data-action="submit->weather-search#search">
+                  <input type="text" data-weather-search-target="city" placeholder="Enter city"
+                    class="form-control flex-grow-1">
+                  <a href="" class="d-none position"><i class="bi bi-geo-alt"></i></a>
+                  <input type="submit" value="Get the weather" class="btn btn-primary ms-3">
+                </form>
+                <div class="card mt-4 mb-5">
+                  <div class="card-body">
+                    <h1>Weather in <span data-weather-search-target="cityName">
+                      </span></h1>
+                    <h3 class="text-secondary" data-weather-search-target="date">
+                    </h3>
+                    <div>
+                      <p data-weather-search-target="description">
+                      </p>
+                      <div class="d-flex">
+                        <img src="" alt="Weather Icon" data-weather-search-target="iconEl">
+                        <h2 data-weather-search-target="temperature">
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <p class="text hidden-2">
         I'm a continuous learner, <br>
         challenging common believes <br>
         for skyrocketing <strong class="random3">bold</strong> ideas 🚀
       </p>
-      <div class="react-ability hidden-2">
+      <div class="ability-example hidden-2">
         <p class="text">
           I develop stuff for <strong class="random4">fun</strong><br>
           while developing new skills
