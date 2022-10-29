@@ -117,9 +117,8 @@
           <div data-controller="weather-search" class="container">
             <div class="row justify-content-center">
               <div class="col-sm-8">
-                <form class="d-flex my-5" data-action="submit->weather-search#search">
-                  <input type="text" data-weather-search-target="city" placeholder="Enter city"
-                    class="form-control flex-grow-1">
+                <form class="city-form">
+                  <input type="text" id="city-input" placeholder="Enter city" class="form-control flex-grow-1">
                   <a href="" class="d-none position"><i class="bi bi-geo-alt"></i></a>
                   <input type="submit" value="Get the weather" class="btn btn-primary ms-3">
                 </form>
