@@ -5,6 +5,10 @@
   padding: 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --colorBack: #1b1f24;
   --colorText: #ffffff;
@@ -327,7 +331,7 @@ button a {
 }
 
 .single-dice {
-  margin-left: 30px;
+  margin-left: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -337,6 +341,11 @@ button a {
   height: 50px;
   width: 50px;
   cursor: pointer;
+}
+
+.single-dice:hover {
+  transition: all 0.5s;
+  transform: translateY(-5px);
 }
 
 .dot {
@@ -371,8 +380,4 @@ button a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-html {
-  scroll-behavior: smooth;
 }
