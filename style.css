@@ -89,6 +89,11 @@ body {
   margin-bottom: 80px;
 }
 
+.roll-action:hover {
+  transition: all 1s;
+  transform: translateX(-5);
+}
+
 /* Tech Stack Section */
 
 .tech-stack {
@@ -98,13 +103,28 @@ body {
   flex-wrap: wrap;
 }
 
-.tech-stack>img {
+.prog-language {
   background-color: var(--colorIconBack);
   height: 60px;
   padding: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prog-language p {
+  color: var(--colorBtnBack);
+  text-align: center;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.prog-language img {
+  width: 80%;
 }
 
 .prog-language:nth-child(2) {
