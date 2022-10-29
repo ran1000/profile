@@ -191,7 +191,7 @@ body {
   padding-bottom: 120px;
 }
 
-.abilities>p {
+.abilities .text {
   padding-bottom: 80px;
   color: var(--bodyFont);
   font-size: 1.3rem;
@@ -317,3 +317,56 @@ button a {
   font-family: 'Open Sans', sans-serif;
   color: #2D46B9;
 } */
+
+/* dice face */
+
+.react-ability {
+  display: flex;
+  flex-direction: row;
+}
+
+.single-dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: black;
+  flex-shrink: 0;
+}
+
+.fifth-face {
+  height: 80%;
+  width: 80%;
+  margin: 10% auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fifth-face .column:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fifth-face .column:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fifth-face .column:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
