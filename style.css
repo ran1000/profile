@@ -84,14 +84,15 @@ body {
   font-weight: 700;
 }
 
-.roll-action {
+#slidedown {
   font-size: 30px;
   margin-bottom: 80px;
 }
 
-.roll-action:hover {
-  transition: all 1s;
-  transform: translateX(-5);
+#slidedown:hover {
+  /* color: #F037A5; */
+  transition: all 0.5s;
+  transform: translateY(-5px);
 }
 
 /* Tech Stack Section */
@@ -243,6 +244,7 @@ body {
   line-height: 1.8rem;
   text-align: center;
   padding-top: 60px;
+  padding-bottom: 10px;
 }
 
 .contact-list {
@@ -256,15 +258,20 @@ body {
 }
 
 .contact-list>li {
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   padding-right: 30px;
+}
+
+.contact-list>li:hover {
+  transition: all 0.5s;
+  transform: translateY(-5px);
 }
 
 a {
   text-decoration: none;
   color: var(--colorHighlight);
   font-family: var(--headerFont);
-  font-size: 20px;
+  font-size: 24px;
 }
 
 li i {
