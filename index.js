@@ -32,27 +32,3 @@ const slider = document.getElementById("slidedown");
 //   e.preventDefault();
 //   scroll({ top: 600, behavior: "smooth" });
 // });
-
-// weather widget
-
-const form = document.querySelector(".city-form");
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const input = document.getElementById("city-input").value;
-  fetchingWeather(input);
-})
-
-fetchingWeather(query) {
-  // fetch(`https://api.openweathermap.org/data/2.5/weather?q=${query}&APPID=${appid}`)
-    .then(res => res.json())
-    .then((data) => {
-      console.dir(data);
-      this.descriptionTarget.innerText = data.weather[0].description;
-      this.temperatureTarget.innerText = `${Math.floor(data.main.temp - 273.15)}°C`;
-      const icon = data.weather[0].icon;
-      this.iconElTarget.setAttribute("src", `https://openweathermap.org/img/w/${icon}.png`);
-    });
-  const date = new Date().toString();
-  this.dateTarget.innerText = date;
-}
