@@ -41,18 +41,33 @@ body {
 
 .profile-page {
   /* display: flex; */
-  width: 66vw;
+  width: 900px;
   margin: 0px auto;
 }
 
-/* @media (max-width: 400px),
-(orientation: portrait) {
-  .portfolio-body {
-    flex-direction: column;
-  }
-} */
+@media (max-width: 960px) {
 
-.text-container {}
+  /* For a screen < 960px, this CSS will be read */
+  .profile-page {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+
+  /* For a screen < 720px, this CSS will be read */
+  .profile-page {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+
+  /* For a screen < 540px, this CSS will be read */
+  .profile-page {
+    width: 300px;
+  }
+}
 
 .text-container>.title {
   color: var(--colorText);
@@ -107,6 +122,7 @@ body {
   flex-direction: row;
   margin-bottom: 80px;
   flex-wrap: wrap;
+  flex-shrink: 0;
 }
 
 .prog-language {
