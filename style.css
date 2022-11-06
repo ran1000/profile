@@ -109,7 +109,8 @@ body {
   color: var(--colorText);
 }
 
-#slidedown:hover {
+#slidedown:hover,
+#slidedown:any-pointer {
   /* color: #F037A5; */
   transition: all 0.5s;
   transform: translateY(-5px);
@@ -148,7 +149,10 @@ body {
 }
 
 .prog-language img {
+  max-width: 100%;
+  display: block;
   width: 80%;
+  height: 80%;
 }
 
 .prog-language:nth-child(2) {
