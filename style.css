@@ -127,8 +127,8 @@ body {
 
 .prog-language {
   background-color: var(--colorIconBack);
-  height: 60px;
-  width: 60px;
+  max-height: 60px;
+  max-width: 60px;
   padding: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -137,6 +137,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .prog-language p {
